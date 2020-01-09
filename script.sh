@@ -22,4 +22,3 @@ sudo systemctl set-default graphical.target
 sudo yum -y install firefox
 sudo yum -y install docker docker-compose
 sudo reboot
-0Hy9=@1u0ZvHLl1
