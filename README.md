@@ -1,3 +1,3 @@
-# gui | packages instalation with yum
+# Gui | packages instalation with yum
 
 ### https://vpsdime.com/
