@@ -4,7 +4,6 @@ sudo yum -y update
 sudo useradd tecnico
 sudo echo "Admin123" | passwd --stdin tecnico
 sudo usermod -aG wheel tecnico
-su tecnico
 # Install Aditionals Packagas !important
 sudo yum -y install epel-release
 sudo yum -y groupinstall "X Window system" 
@@ -16,10 +15,11 @@ sudo systemctl enable xrdp
 sudo firewall-cmd --permanent --add-port=3389/tcp
 # Install Desktop - GUI
 sudo yum -y groupinstall "Xfce"
-sudo echo "xfce4-session" > ~/.xsession
-sudo chmod a+x ~/.xsession
+sudo echo "xfce4-session" > /home/tecnico/.xsession
+sudo chmod a+x ~/home/tecnico/.xsession
 sudo systemctl set-default graphical.target
 # Install Extra Utilities
 sudo yum -y install firefox
 sudo yum -y install docker docker-compose
 sudo reboot
+0Hy9=@1u0ZvHLl1
