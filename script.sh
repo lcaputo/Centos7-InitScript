@@ -4,6 +4,7 @@ sudo yum -y update
 sudo useradd tecnico
 sudo echo "Admin123" | passwd --stdin tecnico
 sudo usermod -aG wheel tecnico
+su tecnico
 # Install Aditionals Packagas !important
 sudo yum -y install epel-release
 sudo yum -y groupinstall "X Window system" 
