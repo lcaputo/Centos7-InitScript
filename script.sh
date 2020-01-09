@@ -16,7 +16,7 @@ sudo firewall-cmd --permanent --add-port=3389/tcp
 # Install Desktop - GUI
 sudo yum -y groupinstall "Xfce"
 sudo echo "xfce4-session" > /home/tecnico/.xsession
-sudo chmod a+x ~/home/tecnico/.xsession
+sudo chmod a+x /home/tecnico/.xsession
 sudo systemctl set-default graphical.target
 # Install Extra Utilities
 sudo yum -y install firefox
