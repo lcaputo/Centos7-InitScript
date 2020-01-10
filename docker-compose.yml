@@ -12,9 +12,11 @@ services:
        MYSQL_DATABASE: wordpress
        MYSQL_USER: tecnico
        MYSQL_PASSWORD: 12345
+     networks:
+         - work
 
 volumes:
     db_data:
 networks:
     work:
-      - bridge
+      driver: bridge
