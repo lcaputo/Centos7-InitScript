@@ -20,6 +20,8 @@ sudo chmod a+x /home/tecnico/.xsession
 sudo systemctl set-default graphical.target
 # Install Extra Utilities
 sudo yum -y install firefox
-sudo yum -y install docker docker-compose
-sudo chmod 777 /var/run/docker.soc
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum -y install docker
+sudo systemctl start docker
+sudo systemctl enable docker
 sudo reboot
